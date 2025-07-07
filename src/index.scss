@@ -1,0 +1,56 @@
+@import './styles/variables';
+@import './styles/mixins';
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100vh;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+}
+
+
+
+// h1, h2, h3, h4, h5 {
+//     font-weight: $font-weight-bold;
+//     line-height: $line-height-tight;
+//     letter-spacing: $letter-spacing-tight;
+//     color: $grey-shade;
+// }
+
+.header {
+    color: $primary-tint;
+
+    // padding: 24px;
+    // background-color: $primary-base;
+    // display: flex;
+    // justify-content: center;
+
+    @include flexcomponent;
+    
+
+    &__text {
+        text-transform: uppercase;
+    }
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: space-between
+}
+
+.footer {
+    // padding: 24px;
+    // background-color: $primary-base;
+    // display: flex;
+    // justify-content: center;
+
+     @include flexcomponent;
+}

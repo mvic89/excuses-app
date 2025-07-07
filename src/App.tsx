@@ -3,6 +3,8 @@ import './App.css'
 import type { ExcusesType } from './utils/types'
 import ExcusesCard from './component/ExcusesCard'
 import Blackboard from './component/Blackboard'
+import Header from './component/Header/Index'
+import Footer from './component/Footer'
 
 function App() {
   const [excuses, setExcuses] = useState<ExcusesType[]>([])
@@ -20,7 +22,8 @@ function App() {
   }
 
   return (
-    <div>
+    <div className='main-container'>
+      <Header/>
       <div>
         {excuses.map((excuse) => (
           <ExcusesCard key={excuse.id} excuse={excuse} onClick={handleCardClick} />
@@ -28,6 +31,7 @@ function App() {
       </div>
 
       <Blackboard excuse={selectedExcuse} />
+      <Footer/>
     </div>
   )
 }

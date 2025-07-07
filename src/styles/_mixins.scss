@@ -1,0 +1,6 @@
+@mixin flexcomponent {
+    padding: 24px;
+    background-color: $primary-base;
+    display: flex;
+    justify-content: center;
+}
