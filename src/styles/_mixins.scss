@@ -5,6 +5,25 @@
     justify-content: center;
 }
 
+@mixin blackboard {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    border: 1px solid #333;
+    border-radius: 8px;
+    padding: 0 1.5rem;
+    font-family: $font-family;
+    
+
+    max-width: 500px;
+    margin: 0 auto;
+
+    &__text {
+        text-align: center;
+    }
+
+}
+
 // @mixin button {
 //     font-weight: $line-height-normal;
 //     font-size: $text__base; 

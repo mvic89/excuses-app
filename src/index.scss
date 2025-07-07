@@ -25,7 +25,6 @@ body {
 // }
 
 .header {
-    color: $primary-tint;
 
     // padding: 24px;
     // background-color: $primary-base;
@@ -37,6 +36,9 @@ body {
 
     &__text {
         text-transform: uppercase;
+        color: $primary-tint;
+        font-size: $text__h4;
+        font-family: $font-family;
     }
 }
 
@@ -75,6 +77,12 @@ body {
     // justify-content: center;
 
      @include flexcomponent;
+
+     &__text {
+        font-size: $text__base;
+        font-family: $font-family;
+        color: $primary-tint;
+     }
 }
 
 h1, h2, h3, h4, h5 {
@@ -136,6 +144,13 @@ a {
         border-color: lightcoral;
     }
     
+}
+
+.blackboard {
+    // display: flex;
+    // justify-content: center;
+
+    @include blackboard;
 }
 
 // .btn-primary:link, .btn-primary:visited {
