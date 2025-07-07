@@ -37,8 +37,12 @@ body {
     &__text {
         text-transform: uppercase;
         color: $primary-tint;
-        font-size: $text__h4;
-        font-family: $font-family;
+
+        font: {
+            size: $text__h4;
+            family: $font-family;
+            weight: $font-weight-bold;
+        }
     }
 }
 
@@ -55,11 +59,18 @@ body {
     justify-content: center;
     gap: 1rem;
 
+    @include responsive-mobile {
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
 }
 
 .excuses-card {
     border: 1px solid #333;
     // @include button;
+
+   
 }
 
 // .btn {
@@ -119,6 +130,7 @@ p {
 a {
     text-decoration: none;
     font-size: $text__base;
+    font-family: $font-family;
     display: inline-block;
 
 }
@@ -151,6 +163,9 @@ a {
     // justify-content: center;
 
     @include blackboard;
+    @include responsive-mobile {
+        width: 90%;
+    }
 }
 
 // .btn-primary:link, .btn-primary:visited {

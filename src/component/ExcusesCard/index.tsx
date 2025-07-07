@@ -9,7 +9,7 @@ type Props = {
 const ExcusesCard = ({ excuse, onClick, isActive }: Props) => {
   return (
     <div className={`excuses-card btn btn-primary ${isActive ? 'active' : ''}`} onClick={() => onClick(excuse)}>
-      <a>Excuse #{excuse.id}</a>
+      <a className='excuses-btn'>Excuse #{excuse.id}</a>
     </div>
   )
 }
