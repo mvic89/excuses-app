@@ -15,22 +15,7 @@ body {
     margin: 0;
 }
 
-
-
-// h1, h2, h3, h4, h5 {
-//     font-weight: $font-weight-bold;
-//     line-height: $line-height-tight;
-//     letter-spacing: $letter-spacing-tight;
-//     color: $grey-shade;
-// }
-
 .header {
-
-    // padding: 24px;
-    // background-color: $primary-base;
-    // display: flex;
-    // justify-content: center;
-
     @include flexcomponent;
     
 
@@ -54,7 +39,6 @@ body {
 }
 
 .card-container {
-    // border: 1px solid #333;
     display: flex;
     justify-content: center;
     gap: 1rem;
@@ -68,25 +52,11 @@ body {
 
 .excuses-card {
     border: 1px solid #333;
-    // @include button;
-
-   
 }
 
-// .btn {
-//     font-weight: $line-height-normal;
-//     font-size: $text__base; 
-//     text-decoration: none;
-//     padding: 1.5rem 3rem;
-//     border-radius: 8px;
-// }
+
 
 .footer {
-    // padding: 24px;
-    // background-color: $primary-base;
-    // display: flex;
-    // justify-content: center;
-
      @include flexcomponent;
 
      &__text {
@@ -159,42 +129,9 @@ a {
 }
 
 .blackboard {
-    // display: flex;
-    // justify-content: center;
-
     @include blackboard;
     @include responsive-mobile {
         width: 90%;
     }
 }
 
-// .btn-primary:link, .btn-primary:visited {
-//     color: var(--white);
-//     background-color: $primary-base;
-//     border: 2px solid $primary-base;
-// }
-
-// .btn-primary.active {
-//     background-color: lightcoral;
-//     color: $white;
-//     border-color: lightcoral;
-// }
-
-
-// .btn-primary:hover, .btn-primary:active {
-//     color: $white;
-//     background-color: $primary-shade;
-//     border: 1px solid $primary-shade;
-// }
-
-// .btn-primary-outline:link, .btn-primary-outline:visited {
-//     color: $primary-base;
-//     background-color: $white;
-//     border: 2px solid $primary-base;
-// }
-
-// .btn-primary-outline:hover, .btn-primary-outline:active {
-//     color: $primary-base;
-//     background-color: $white;
-//     border: 2px solid $primary-shade;
-// }
