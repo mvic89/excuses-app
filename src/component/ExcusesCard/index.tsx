@@ -3,12 +3,13 @@ import type { ExcusesType } from '../../utils/types'
 type Props = {
   excuse: ExcusesType
   onClick: (excuse: ExcusesType) => void
+  isActive: boolean
 }
 
-const ExcusesCard = ({ excuse, onClick }: Props) => {
+const ExcusesCard = ({ excuse, onClick, isActive }: Props) => {
   return (
-    <div onClick={() => onClick(excuse)}>
-      <h3>Excuse #{excuse.id}</h3>
+    <div className={`excuses-card btn btn-primary ${isActive ? 'active' : ''}`} onClick={() => onClick(excuse)}>
+      <a>Excuse #{excuse.id}</a>
     </div>
   )
 }

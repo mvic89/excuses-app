@@ -24,9 +24,9 @@ function App() {
   return (
     <div className='main-container'>
       <Header/>
-      <div>
+      <div className='card-container'>
         {excuses.map((excuse) => (
-          <ExcusesCard key={excuse.id} excuse={excuse} onClick={handleCardClick} />
+          <ExcusesCard key={excuse.id} excuse={excuse} onClick={handleCardClick} isActive={selectedExcuse?.id === excuse.id}/>
         ))}
       </div>
 
